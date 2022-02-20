@@ -1,515 +1,620 @@
 <!DOCTYPE html>
-<html>
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
-<meta http-equiv="Content-type" content="text/html;charset=utf-8">
-<title>Login</title>
-<style type="text/css">
+<html lang="en">
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=UTF-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+    <title>Login</title>
+    <style type="text/css">
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
 
-html, body { margin: 0; padding: 0; }
+      body {
+        background-color: #ffffff;
+      }
+      div#topspace {
+        width: 100%;
+        height: 0px;
+      }
 
-body{
-  background-color: #FFFFFF;
-}
-div#topspace {
-  width: 100%;
-  height: 0px;
-}
+      div#loginbox {
+        width: 80%;
+        max-width: 420px;
+        min-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 0;
+        padding-right: 0;
 
-div#loginbox {
-  width: 80%;
-  max-width: 420px;
-  min-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  padding-left: 0;
-  padding-right: 0;
-  
-  /* Background gradient from http://www.colorzilla.com/gradient-editor/ */
-  background: #1A305E; /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFhMzA1ZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyZjVkYWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top,  #1A305E 0%, #2F5DAA 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1A305E), color-stop(100%,#2F5DAA)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #1A305E 0%,#2F5DAA 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #1A305E 0%,#2F5DAA 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #1A305E 0%,#2F5DAA 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  #1A305E 0%,#2F5DAA 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1A305E', endColorstr='#2F5DAA',GradientType=0 ); /* IE6-8 */
-  /* End of gradient */
-  -webkit-box-shadow: 6px 6px 6px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow:    6px 6px 6px 0px rgba(50, 50, 50, 0.75);
-  box-shadow:         6px 6px 6px 0px rgba(50, 50, 50, 0.75);
+        /* Background gradient from http://www.colorzilla.com/gradient-editor/ */
+        background: #1a305e; /* Old browsers */
+        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFhMzA1ZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyZjVkYWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+        background: -moz-linear-gradient(
+          top,
+          #1a305e 0%,
+          #2f5daa 100%
+        ); /* FF3.6+ */
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          color-stop(0%, #1a305e),
+          color-stop(100%, #2f5daa)
+        ); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(
+          top,
+          #1a305e 0%,
+          #2f5daa 100%
+        ); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(
+          top,
+          #1a305e 0%,
+          #2f5daa 100%
+        ); /* Opera 11.10+ */
+        background: -ms-linear-gradient(
+          top,
+          #1a305e 0%,
+          #2f5daa 100%
+        ); /* IE10+ */
+        background: linear-gradient(
+          to bottom,
+          #1a305e 0%,
+          #2f5daa 100%
+        ); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1A305E', endColorstr='#2F5DAA',GradientType=0 ); /* IE6-8 */
+        /* End of gradient */
+        -webkit-box-shadow: 6px 6px 6px 0px rgba(50, 50, 50, 0.75);
+        -moz-box-shadow: 6px 6px 6px 0px rgba(50, 50, 50, 0.75);
+        box-shadow: 6px 6px 6px 0px rgba(50, 50, 50, 0.75);
 
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-}
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+      }
 
-div#innerbox {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-}
+      div#innerbox {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+      }
 
-div#loginbox h1{
-  color: #FFFFFF;
-	font: bold 44px Arial, Helvetica, sans-serif;
-	text-align: center;
-	padding: 0;
-	margin: 10px 0 0 0;
-}
+      div#loginbox h1 {
+        color: #ffffff;
+        font: bold 44px Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding: 0;
+        margin: 10px 0 0 0;
+      }
 
-input#username{
-  background: url('slpw/username.png') 5px 3px no-repeat;
-  width: 85%;
-  padding-left: 45px;
-  
-  background-color: #FFFFFF;
-  padding-top: 10px;
-  padding-bottom: 10px;  
-  color: #1A305E;
-	font: bold 16px Arial, Helvetica, sans-serif;
-	border: none;
-  }
+      input#username {
+        background: url("slpw/username.png") 5px 3px no-repeat;
+        width: 85%;
+        padding-left: 45px;
 
-input#password{
-  background: url('slpw/password.png') 5px 3px no-repeat;
-  width: 85%;
-  padding-left: 45px;
-  
-  background-color: #FFFFFF;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #1A305E;
-	font: bold 16px Arial, Helvetica, sans-serif;
-	border: none;
-}
+        background-color: #ffffff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #1a305e;
+        font: bold 16px Arial, Helvetica, sans-serif;
+        border: none;
+      }
 
-input#turing{
-  background: url('slpw/turingimage028c.jpg?w=80&amp;h=40') 0px 0px no-repeat;
-  background-size: 80px 100%;
-  background-color: #FFFFFF;
-  width: 72%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 90px;
-  color: #1A305E;
-	font: bold 16px Arial, Helvetica, sans-serif;
-	border: none;
-}
+      input#password {
+        background: url("slpw/password.png") 5px 3px no-repeat;
+        width: 85%;
+        padding-left: 45px;
 
-input#remember{
-  width: 20px;
-  height : 20px;
-  border: none;
-  margin: 17px 0 0 10px;
-}
+        background-color: #ffffff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #1a305e;
+        font: bold 16px Arial, Helvetica, sans-serif;
+        border: none;
+      }
 
-div#loginbox label{
-  display: block;
-  clear: both;
-  color: #FFFFFF;
-	font: bold 18px Arial, Helvetica, sans-serif;
-  margin: 15px 0 2px 0 ;
-  padding: 0;
-  float: left;
-}
+      input#turing {
+        background: url("slpw/turingimage028c.jpg?w=80&amp;h=40") 0px 0px
+          no-repeat;
+        background-size: 80px 100%;
+        background-color: #ffffff;
+        width: 72%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 90px;
+        color: #1a305e;
+        font: bold 16px Arial, Helvetica, sans-serif;
+        border: none;
+      }
 
-div#loginbox label.labelcb{
-  display: inline;
-  clear: none;
-}
+      input#remember {
+        width: 20px;
+        height: 20px;
+        border: none;
+        margin: 17px 0 0 10px;
+      }
 
-a#forgot{
-  color: #FFFFFF;
-	font: bold 14px Arial, Helvetica, sans-serif;
-	text-align: left;
-	vertical-align: middle;
-	padding: 0;
-	margin-left: 20px;
-  margin-top: -20px;
-}
+      div#loginbox label {
+        display: block;
+        clear: both;
+        color: #ffffff;
+        font: bold 18px Arial, Helvetica, sans-serif;
+        margin: 15px 0 2px 0;
+        padding: 0;
+        float: left;
+      }
 
-p#loginmessage{
-  color: #FF0000;
-	font: bold 16px Arial, Helvetica, sans-serif;
-	text-align: left;
-	padding: 0;
-	margin: 15px 0 0 0;
-}
+      div#loginbox label.labelcb {
+        display: inline;
+        clear: none;
+      }
 
-p#signup{
-	text-align: center;
-  padding: 0;
-	margin: 15px 0 0 0;
-}
+      a#forgot {
+        color: #ffffff;
+        font: bold 14px Arial, Helvetica, sans-serif;
+        text-align: left;
+        vertical-align: middle;
+        padding: 0;
+        margin-left: 20px;
+        margin-top: -20px;
+      }
 
-p#signup a{
-  color: #FFA500;
-	font: bold 16px Arial, Helvetica, sans-serif;
-	text-align: center;
-	vertical-align: middle;
-}
+      p#loginmessage {
+        color: #ff0000;
+        font: bold 16px Arial, Helvetica, sans-serif;
+        text-align: left;
+        padding: 0;
+        margin: 15px 0 0 0;
+      }
 
+      p#signup {
+        text-align: center;
+        padding: 0;
+        margin: 15px 0 0 0;
+      }
 
-/* Button from http://www.bestcssbuttongenerator.com */
-.myButton {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #79BCFF), color-stop(1, #378EE5));
-	background:-moz-linear-gradient(top, #79BCFF 5%, #378EE5 100%);
-	background:-webkit-linear-gradient(top, #79BCFF 5%, #378EE5 100%);
-	background:-o-linear-gradient(top, #79BCFF 5%, #378EE5 100%);
-	background:-ms-linear-gradient(top, #79BCFF 5%, #378EE5 100%);
-	background:linear-gradient(to bottom, #79BCFF 5%, #378EE5 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79BCFF', endColorstr='#378EE5',GradientType=0);
-	background-color:#79BCFF;
-	-moz-border-radius: 10px;
-	-webkit-border-radius:  10px;
-	border-radius: 10px;
-	display:inline-block;
-	cursor:pointer;
-	color:#FFFFFF;
-  font: normal normal bold 17px Arial, Helvetica, sans-serif;
-	padding: 8px 31px;
-	text-decoration: none;
-	border: solid #FFFFFF 0px;
-/*
+      p#signup a {
+        color: #ffa500;
+        font: bold 16px Arial, Helvetica, sans-serif;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      /* Button from http://www.bestcssbuttongenerator.com */
+      .myButton {
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          color-stop(0.05, #79bcff),
+          color-stop(1, #378ee5)
+        );
+        background: -moz-linear-gradient(top, #79bcff 5%, #378ee5 100%);
+        background: -webkit-linear-gradient(top, #79bcff 5%, #378ee5 100%);
+        background: -o-linear-gradient(top, #79bcff 5%, #378ee5 100%);
+        background: -ms-linear-gradient(top, #79bcff 5%, #378ee5 100%);
+        background: linear-gradient(to bottom, #79bcff 5%, #378ee5 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#79BCFF', endColorstr='#378EE5',GradientType=0);
+        background-color: #79bcff;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font: normal normal bold 17px Arial, Helvetica, sans-serif;
+        padding: 8px 31px;
+        text-decoration: none;
+        border: solid #ffffff 0px;
+        /*
 	text-shadow:0px 1px 0px #ffffff;
 */
-}
-.myButton:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #378EE5), color-stop(1, #79BCFF));
-	background:-moz-linear-gradient(top, #378EE5 5%, #79BCFF 100%);
-	background:-webkit-linear-gradient(top, #378EE5 5%, #79BCFF 100%);
-	background:-o-linear-gradient(top, #378EE5 5%, #79BCFF 100%);
-	background:-ms-linear-gradient(top, #378EE5 5%, #79BCFF 100%);
-	background:linear-gradient(to bottom, #378EE5 5%, #79BCFF 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378EE5', endColorstr='#79BCFF',GradientType=0);
-	background-color:#378EE5;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-/* End of button */
+      }
+      .myButton:hover {
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          color-stop(0.05, #378ee5),
+          color-stop(1, #79bcff)
+        );
+        background: -moz-linear-gradient(top, #378ee5 5%, #79bcff 100%);
+        background: -webkit-linear-gradient(top, #378ee5 5%, #79bcff 100%);
+        background: -o-linear-gradient(top, #378ee5 5%, #79bcff 100%);
+        background: -ms-linear-gradient(top, #378ee5 5%, #79bcff 100%);
+        background: linear-gradient(to bottom, #378ee5 5%, #79bcff 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#378EE5', endColorstr='#79BCFF',GradientType=0);
+        background-color: #378ee5;
+      }
+      .myButton:active {
+        position: relative;
+        top: 1px;
+      }
+      /* End of button */
 
+      /* busy spinner */
+      div#slspinner {
+        display: none;
+        box-sizing: content-box;
+        float: right;
+        height: 12px;
+        width: 12px;
+        margin-left: 0px;
+        margin-right: -22px;
+        margin-top: 2px;
+        position: relative;
+        -webkit-animation: rotation 0.6s infinite linear;
+        -moz-animation: rotation 0.6s infinite linear;
+        -o-animation: rotation 0.6s infinite linear;
+        animation: rotation 0.6s infinite linear;
+        border-left: 2px solid rgba(255, 255, 255, 0.3);
+        border-right: 2px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        border-top: 2px solid rgba(255, 255, 255, 1);
+        border-radius: 100%;
+      }
 
-/* busy spinner */
-div#slspinner {
-  display: none;
-  box-sizing: content-box;  
-  float: right;
-  height: 12px;
-  width: 12px;
-  margin-left: 0px;
-  margin-right: -22px;
-  margin-top: 2px;
-  position: relative;
-  -webkit-animation: rotation .6s infinite linear;
-  -moz-animation: rotation .6s infinite linear;
-  -o-animation: rotation .6s infinite linear;
-  animation: rotation .6s infinite linear;
-  border-left: 2px solid rgba(255,255,255, .3);
-  border-right: 2px solid rgba(255,255,255, .3);
-  border-bottom: 2px solid rgba(255,255,255, .3);
-  border-top: 2px solid rgba(255,255,255, 1);
-  border-radius: 100%;
-}
-
-@-webkit-keyframes rotation {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(359deg);
-  }
-}
-
-@-moz-keyframes rotation {
-  from {
-    -moz-transform: rotate(0deg);
-  }
-  to {
-    -moz-transform: rotate(359deg);
-  }
-}
-
-@-o-keyframes rotation {
-  from {
-    -o-transform: rotate(0deg);
-  }
-  to {
-    -o-transform: rotate(359deg);
-  }
-}
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-
-
-</style>  
-
-<!--[if gte IE 9]>
-  <style type="text/css">
-    .gradient {
-       filter: none;
-    }
-  </style>
-<![endif]-->
-
-<!--[if lte IE 6]>
-  <style type="text/css">
-    div#loginbox {
-    width: 420px;
-    }
-  </style>
-<![endif]-->
-</head>
-<body>
-<div id="topspace"></div>
-<div id="loginbox" class="gradient">
-<form name="siteloklogin" action="https://see-care.com/staffonly.php" method="post"   onSubmit="return validatelogin()" >
-<script type="text/javascript">
-function validatelogin(form)
-{
-  var loginmessage=document.getElementById('loginmessage')
-  if (loginmessage!=null)
-    loginmessage.innerHTML=''
-  if (document.siteloklogin.username.value=="")
-  {
-    if (loginmessage==null)
-      alert("Please enter your username")
-    else
-      loginmessage.innerHTML='Please enter your username'
-    document.siteloklogin.username.focus()
-    return(false)
-  }
-  if (document.siteloklogin.password.value=="")
-  {
-    if (loginmessage==null)
-      alert("Please enter your password")
-    else
-      loginmessage.innerHTML='Please enter your password'
-    document.siteloklogin.password.focus()
-    return(false)
-  }
-  var LoginType="NORMAL";
-  var form=document.getElementsByName('siteloklogin')[0];
-  var slajaxavailable=false;
-  if ((window.XMLHttpRequest) && (typeof JSON === "object"))
-    slajaxavailable=true;
-  if ((document.getElementById('myButton')===null) || (document.getElementById('slspinner')===null))
-    slajaxavailable=false;
-  if ((slajaxavailable) && (LoginType=="NORMAL"))
-  {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function()
-    {
-      if (xhttp.readyState == 4 && xhttp.status == 200)
-      {
-        // Handle callback
-        document.getElementById('myButton').disabled=false;
-        document.getElementById('slspinner').style['display']="none";
-        var data = JSON.parse(xhttp.responseText);
-        if (data.success)
-        {
-          window.location=data.redirect;
-          return(false);
+      @-webkit-keyframes rotation {
+        from {
+          -webkit-transform: rotate(0deg);
         }
-        else  
-        {  
-          document.getElementById("loginmessage").innerHTML = data.message;
-          return(false);
+        to {
+          -webkit-transform: rotate(359deg);
         }
       }
-    };
-    // Serialize form
-    var formData=sl_serialize(form);
-    formData+="&slajaxform=1";
-    var slfrmact=form.action;
-    if (slfrmact=="")
-      slfrmact=window.location.href;
-    document.getElementById('myButton').disabled=true;
-    document.getElementById('slspinner').style['display']="block";
-    xhttp.open("POST.html", slfrmact, true);
-    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhttp.send(formData);
-    return(false);
-  }  
-  if (LoginType=="NORMAL")
-    return(true);
-  document.siteloklogin.sitelokhash.value=MD5(document.siteloklogin.password.value+document.siteloklogin.loginkey.value)
-  document.siteloklogin.password.value="********"
-  return(true)
-}
-function forgotpw(form)
-{
-  var loginmessage=document.getElementById('loginmessage')
-  if (loginmessage!=null)
-    loginmessage.innerHTML=''
-  if (document.siteloklogin.username.value=="")
-  {
-    if (loginmessage==null)
-    alert("Please enter your username or email address")
-    else
-      loginmessage.innerHTML='Please enter your username or email address'
-    document.siteloklogin.username.focus()
-    return(false)
-  }
-  document.siteloklogin.forgotpassword.value="forgotten-it"
- var form=document.getElementsByName('siteloklogin')[0];
- var slajaxavailable=false;
- if ((window.XMLHttpRequest) && (typeof JSON === "object"))
-   slajaxavailable=true;
-  if ((document.getElementById('myButton')===null) || (document.getElementById('slspinner')===null))
-    slajaxavailable=false;
- if (slajaxavailable)
- {
-   var xhttp = new XMLHttpRequest();
-   xhttp.onreadystatechange = function()
-   {
-     if (xhttp.readyState == 4 && xhttp.status == 200)
-     {
-       // Handle callback
-       document.getElementById('myButton').disabled=false;
-       document.getElementById('slspinner').style['display']="none";
-       document.siteloklogin.forgotpassword.value="";
-       var data = JSON.parse(xhttp.responseText);
-       document.getElementById("loginmessage").innerHTML = data.message;
-  document.siteloklogin.forgotpassword.value=""
-         return(false);
-     }
-   };
-   // Serialize form
-   var formData=sl_serialize(form);
-   formData+="&slajaxform=1";
-   var slfrmact=form.action;
-   if (slfrmact=="")
-     slfrmact=window.location.href;
-   document.getElementById('myButton').disabled=true;
-   document.getElementById('slspinner').style['display']="block";
-   xhttp.open("POST.html", slfrmact, true);
-   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-   xhttp.send(formData);
-   return(false);
- }  
-  document.siteloklogin.submit()
-  return(true)
-}
- function sl_serialize(form)
- {
-   if (!form || form.nodeName !== "FORM") {
-     return;
-   }
-   var i, j, q = [];
-   for (i = form.elements.length - 1; i >= 0; i = i - 1) {
-     if (form.elements[i].name === "") {
-       continue;
-     }
-     switch (form.elements[i].nodeName) {
-     case 'INPUT':
-       switch (form.elements[i].type) {
-       case 'text':
-       case 'email':
-       case 'number':
-       case 'hidden':
-       case 'password':
-       case 'button':
-       case 'reset':
-       case 'submit':
-         q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value));
-         break;
-       case 'checkbox':
-       case 'radio':
-         if (form.elements[i].checked) {
-           q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value));
-         }           
-         break;
-       case 'file':
-         break;
-       }
-       break;       
-     case 'TEXTAREA':
-       q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value));
-       break;
-     case 'SELECT':
-       switch (form.elements[i].type) {
-       case 'select-one':
-         q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value));
-         break;
-       case 'select-multiple':
-         for (j = form.elements[i].options.length - 1; j >= 0; j = j - 1) {
-           if (form.elements[i].options[j].selected) {
-             q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].options[j].value));
-           }
-         }
-         break;
-       }
-       break;
-     case 'BUTTON':
-       switch (form.elements[i].type) {
-       case 'reset':
-       case 'submit':
-       case 'button':
-         q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value));
-         break;
-       }
-       break;
-     }
-   }
-   return q.join("&");
- }  
 
+      @-moz-keyframes rotation {
+        from {
+          -moz-transform: rotate(0deg);
+        }
+        to {
+          -moz-transform: rotate(359deg);
+        }
+      }
 
-</script>
-<input type="hidden" name="loginformused" value="1">
-<input type="hidden" name="forgotpassword" value="">
-<div id="innerbox">
-<h1>Login</h1>
-<label for="username">Username</label>
-<input type="text" name="username" id="username" value="" placeholder="username" maxlength="50" tabindex="1" autocorrect="off" autocapitalize="off"  spellcheck="off" autofocus="autofocus">
+      @-o-keyframes rotation {
+        from {
+          -o-transform: rotate(0deg);
+        }
+        to {
+          -o-transform: rotate(359deg);
+        }
+      }
 
-<label for="password">Password</label>
-<input type="password" name="password" id="password" value="" placeholder="password" maxlength="50" tabindex="2" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="off">
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="topspace"></div>
+    <div id="loginbox" class="gradient">
+      <form
+        name="siteloklogin"
+        action="https://see-care.com/staffonly.php"
+        method="post"
+        onSubmit="return validatelogin()"
+      >
+        <script type="text/javascript">
+          function validatelogin(form) {
+            var loginmessage = document.getElementById("loginmessage");
+            if (loginmessage != null) loginmessage.innerHTML = "";
+            if (document.siteloklogin.username.value == "") {
+              if (loginmessage == null) alert("Please enter your username");
+              else loginmessage.innerHTML = "Please enter your username";
+              document.siteloklogin.username.focus();
+              return false;
+            }
+            if (document.siteloklogin.password.value == "") {
+              if (loginmessage == null) alert("Please enter your password");
+              else loginmessage.innerHTML = "Please enter your password";
+              document.siteloklogin.password.focus();
+              return false;
+            }
+            var LoginType = "NORMAL";
+            var form = document.getElementsByName("siteloklogin")[0];
+            var slajaxavailable = false;
+            if (window.XMLHttpRequest && typeof JSON === "object")
+              slajaxavailable = true;
+            if (
+              document.getElementById("myButton") === null ||
+              document.getElementById("slspinner") === null
+            )
+              slajaxavailable = false;
+            if (slajaxavailable && LoginType == "NORMAL") {
+              var xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function () {
+                if (xhttp.readyState == 4 && xhttp.status == 200) {
+                  // Handle callback
+                  document.getElementById("myButton").disabled = false;
+                  document.getElementById("slspinner").style["display"] =
+                    "none";
+                  var data = JSON.parse(xhttp.responseText);
+                  if (data.success) {
+                    window.location = data.redirect;
+                    return false;
+                  } else {
+                    document.getElementById("loginmessage").innerHTML =
+                      data.message;
+                    return false;
+                  }
+                }
+              };
+              // Serialize form
+              var formData = sl_serialize(form);
+              formData += "&slajaxform=1";
+              var slfrmact = form.action;
+              if (slfrmact == "") slfrmact = window.location.href;
+              document.getElementById("myButton").disabled = true;
+              document.getElementById("slspinner").style["display"] = "block";
+              xhttp.open("POST.html", slfrmact, true);
+              xhttp.setRequestHeader(
+                "Content-type",
+                "application/x-www-form-urlencoded"
+              );
+              xhttp.send(formData);
+              return false;
+            }
+            if (LoginType == "NORMAL") return true;
+            document.siteloklogin.sitelokhash.value = MD5(
+              document.siteloklogin.password.value +
+                document.siteloklogin.loginkey.value
+            );
+            document.siteloklogin.password.value = "********";
+            return true;
+          }
+          function forgotpw(form) {
+            var loginmessage = document.getElementById("loginmessage");
+            if (loginmessage != null) loginmessage.innerHTML = "";
+            if (document.siteloklogin.username.value == "") {
+              if (loginmessage == null)
+                alert("Please enter your username or email address");
+              else
+                loginmessage.innerHTML =
+                  "Please enter your username or email address";
+              document.siteloklogin.username.focus();
+              return false;
+            }
+            document.siteloklogin.forgotpassword.value = "forgotten-it";
+            var form = document.getElementsByName("siteloklogin")[0];
+            var slajaxavailable = false;
+            if (window.XMLHttpRequest && typeof JSON === "object")
+              slajaxavailable = true;
+            if (
+              document.getElementById("myButton") === null ||
+              document.getElementById("slspinner") === null
+            )
+              slajaxavailable = false;
+            if (slajaxavailable) {
+              var xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function () {
+                if (xhttp.readyState == 4 && xhttp.status == 200) {
+                  // Handle callback
+                  document.getElementById("myButton").disabled = false;
+                  document.getElementById("slspinner").style["display"] =
+                    "none";
+                  document.siteloklogin.forgotpassword.value = "";
+                  var data = JSON.parse(xhttp.responseText);
+                  document.getElementById("loginmessage").innerHTML =
+                    data.message;
+                  document.siteloklogin.forgotpassword.value = "";
+                  return false;
+                }
+              };
+              var formData = sl_serialize(form);
+              formData += "&slajaxform=1";
+              var slfrmact = form.action;
+              if (slfrmact == "") slfrmact = window.location.href;
+              document.getElementById("myButton").disabled = true;
+              document.getElementById("slspinner").style["display"] = "block";
+              xhttp.open("POST.html", slfrmact, true);
+              xhttp.setRequestHeader(
+                "Content-type",
+                "application/x-www-form-urlencoded"
+              );
+              xhttp.send(formData);
+              return false;
+            }
+            document.siteloklogin.submit();
+            return true;
+          }
+          function sl_serialize(form) {
+            if (!form || form.nodeName !== "FORM") {
+              return;
+            }
+            var i,
+              j,
+              q = [];
+            for (i = form.elements.length - 1; i >= 0; i = i - 1) {
+              if (form.elements[i].name === "") {
+                continue;
+              }
+              switch (form.elements[i].nodeName) {
+                case "INPUT":
+                  switch (form.elements[i].type) {
+                    case "text":
+                    case "email":
+                    case "number":
+                    case "hidden":
+                    case "password":
+                    case "button":
+                    case "reset":
+                    case "submit":
+                      q.push(
+                        form.elements[i].name +
+                          "=" +
+                          encodeURIComponent(form.elements[i].value)
+                      );
+                      break;
+                    case "checkbox":
+                    case "radio":
+                      if (form.elements[i].checked) {
+                        q.push(
+                          form.elements[i].name +
+                            "=" +
+                            encodeURIComponent(form.elements[i].value)
+                        );
+                      }
+                      break;
+                    case "file":
+                      break;
+                  }
+                  break;
+                case "TEXTAREA":
+                  q.push(
+                    form.elements[i].name +
+                      "=" +
+                      encodeURIComponent(form.elements[i].value)
+                  );
+                  break;
+                case "SELECT":
+                  switch (form.elements[i].type) {
+                    case "select-one":
+                      q.push(
+                        form.elements[i].name +
+                          "=" +
+                          encodeURIComponent(form.elements[i].value)
+                      );
+                      break;
+                    case "select-multiple":
+                      for (
+                        j = form.elements[i].options.length - 1;
+                        j >= 0;
+                        j = j - 1
+                      ) {
+                        if (form.elements[i].options[j].selected) {
+                          q.push(
+                            form.elements[i].name +
+                              "=" +
+                              encodeURIComponent(
+                                form.elements[i].options[j].value
+                              )
+                          );
+                        }
+                      }
+                      break;
+                  }
+                  break;
+                case "BUTTON":
+                  switch (form.elements[i].type) {
+                    case "reset":
+                    case "submit":
+                    case "button":
+                      q.push(
+                        form.elements[i].name +
+                          "=" +
+                          encodeURIComponent(form.elements[i].value)
+                      );
+                      break;
+                  }
+                  break;
+              }
+            }
+            return q.join("&");
+          }
+        </script>
+        <input type="hidden" name="loginformused" value="1" />
+        <input type="hidden" name="forgotpassword" value="" />
+        <div id="innerbox">
+          <h1>Login</h1>
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            value=""
+            placeholder="username"
+            maxlength="50"
+            tabindex="1"
+            autocorrect="off"
+            autocapitalize="off"
+            spellcheck="off"
+            autofocus="autofocus"
+          />
 
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            value=""
+            placeholder="password"
+            maxlength="50"
+            tabindex="2"
+            autocomplete="off"
+            autocorrect="off"
+            autocapitalize="off"
+            spellcheck="off"
+          />
 
+          <label class="labelcb" for="remember">Auto Login</label>
+          <input
+            type="checkbox"
+            name="remember"
+            id="remember"
+            value="2"
+            tabindex="4"
+          />
 
-<label class="labelcb" for="remember">Auto Login</label>
-<input type="checkbox" name="remember" id="remember"  value="2" tabindex="4">
+          <div
+            style="
+              display: block;
+              clear: both;
+              margin-top: 15px;
+              line-height: 10px;
+              padding: 0;
+              margin: 0;
+            "
+          >
+            <br />
+          </div>
+          <button type="submit" class="myButton" id="myButton" tabindex="5">
+            Login
+            <div id="slspinner"></div>
+          </button>
+          <a
+            id="forgot"
+            href="javascript: void forgotpw()"
+            title="Please enter your username or email address"
+            >Forgot Password</a
+          >
 
-<div style="display: block;clear: both;margin-top: 15px; line-height:10px;padding:0;margin:0;"><br></div>
-<button type="submit" class="myButton" id="myButton" tabindex="5" >Login<div id="slspinner"></div></button>
-<a id="forgot" href="javascript: void forgotpw()" title="Please enter your username or email address">Forgot Password</a>
-
-
-<p id="loginmessage"></p>
-</div>
-</form>
-</div> 
-<script type="text/javascript">
-centerLogin();
-var obj=document.getElementById("username")
-obj.focus()
-window.onresize=centerLogin;
-function centerLogin()
-{
-  var dsocheight = document.documentElement.clientHeight || window.innerHeight || document.getElementsByTagName('body')[0].clientHeight;
-  var loginboxheight = document.getElementById('loginbox').clientHeight;
-  var newtop=0;
-  newtop=Math.floor((dsocheight-loginboxheight)/2);
-  document.getElementById('topspace').style.height=newtop+'px';
-}  
-</script>
-</body>
+          <p id="loginmessage"></p>
+        </div>
+      </form>
+    </div>
+    <script type="text/javascript">
+      centerLogin();
+      var obj = document.getElementById("username");
+      obj.focus();
+      window.onresize = centerLogin;
+      function centerLogin() {
+        var dsocheight =
+          document.documentElement.clientHeight ||
+          window.innerHeight ||
+          document.getElementsByTagName("body")[0].clientHeight;
+        var loginboxheight = document.getElementById("loginbox").clientHeight;
+        var newtop = 0;
+        newtop = Math.floor((dsocheight - loginboxheight) / 2);
+        document.getElementById("topspace").style.height = newtop + "px";
+      }
+    </script>
+  </body>
 </html>
- 
