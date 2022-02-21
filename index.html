@@ -27,8 +27,15 @@
       }
     </style>
   </head>
-
   <body>
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0"
+      nonce="Xfv1zdFY"
+    ></script>
     <div class="w3-bar w3-black">
       <button class="w3-bar-item w3-button" onclick="openCat('HOME')">
         HOME
@@ -83,8 +90,31 @@
     <div id="HOME" class="Cat w3-container w3-black">
       <div class="w3-display-container">
         <img src="media/refractor.jpg" style="min-height: 700px; width: 100%" />
-        <div class="w3-display-middle w3-container w3-black w3-large-white">
+        <div class="w3-display-topleft w3-container w3-large-white">
           <h1>SEE-CARE</h1>
+        </div>
+        <div class="w3-display-right w3-card-4">
+          <div
+            class="fb-page"
+            data-href="https://www.facebook.com/Southeast-Connecticut-Eye-Care-LLC-108614277266405"
+            data-tabs="timeline"
+            data-width="500"
+            data-height="700"
+            data-small-header="false"
+            data-adapt-container-width="true"
+            data-hide-cover="false"
+            data-show-facepile="true"
+          >
+            <blockquote
+              cite="https://www.facebook.com/Southeast-Connecticut-Eye-Care-LLC-108614277266405"
+              class="fb-xfbml-parse-ignore"
+            >
+              <a
+                href="https://www.facebook.com/Southeast-Connecticut-Eye-Care-LLC-108614277266405"
+                >Southeast Connecticut Eye Care, LLC</a
+              >
+            </blockquote>
+          </div>
         </div>
       </div>
     </div>
