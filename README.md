@@ -30,7 +30,7 @@
 4. clean + format code(Done/continuously)
 5. update for accessibility(Added lang="en", need alt for images, and add color matrix for hard of vision)
 6. spell check(Done, always needs a double/triple check especially for medical jargon)
-7. cleanup "about" page
+7. cleanup "about" page(Done)
 8. make "services" interactive
 9. update patient/clinician pages
 10. add images(what images are appropriate for a med site? Using some from facebook)

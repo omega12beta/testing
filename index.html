@@ -104,8 +104,8 @@
           alt="refractor"
           style="min-height: 700px; width: 100%"
         />
-        <div class="w3-display-topleft w3-container w3-large-white">
-          <h1>SEE-CARE</h1>
+        <div class="w3-display-topleft w3-container w3-xlarge w3-monospace">
+          <h1><b>SEE-CARE<b></h1>
         </div>
         <div class="w3-display-right w3-card-4">
           <div
@@ -133,45 +133,47 @@
       </div>
     </div>
 
-    <div id="ABOUT" class="Cat w3-cell-row" style="display: none">
+    <div id="ABOUT" class="Cat" style="display: none">
       <br />
-      <div class="w3-container w3-cell">
-        <img
-          src="media/hyder_halloween.jpg"
-          class="w3-image w3-hide-small"
-          style="width: 100%; max-width: 900px"
-        />
+      <div class="w3-card-4" style="width: 100%">
+        <div class="w3-container w3-center">
+          <img
+            src="media/hyder_halloween.jpg"
+            class="w3-image w3-hide-small"
+            style="width: 100%; max-width: 900px"
+          />
+        </div>
+        <div class="w3-container w3-center" style="width: 100%">
+          <h1>Southeast Connecticut Eye Care, LLC</h1>
+          <h2>Medical and Surgical Eye Care</h2>
+          <p>
+            Whether you're just seeing us for glasses, or have advanced eye
+            disease, we take your vision seriously. Your eyes give you your
+            window on the world. You use them every waking minute. Few things in
+            life are as important.
+          </p>
+          <p>
+            We work to provide the best eye care available anywhere. Our board
+            certified physicians and our highly experienced staff work to give
+            you a quick, comfortable experience, but also the most thorough
+            examinations and advanced treatments possible.
+          </p>
+          <p>
+            If you are looking for a new eye doctor, or if you've been referred
+            for consultation by your current doctor, please call us today. We
+            look forward to seeing you!
+          </p>
+        </div>
       </div>
-      <div class="w3-container w3-cell w3-padding">
-        <h1>Southeast Connecticut Eye Care, LLC</h1>
-        <h2>Medical and Surgical Eye Care</h2>
-        <p>
-          Whether you're just seeing us for glasses, or have advanced eye
-          disease, we take your vision seriously. Your eyes give you your window
-          on the world. You use them every waking minute. Few things in life are
-          as important.
-        </p>
-        <p>
-          We work to provide the best eye care available anywhere. Our board
-          certified physicians and our highly experienced staff work to give you
-          a quick, comfortable experience, but also the most thorough
-          examinations and advanced treatments possible.
-        </p>
-        <p>
-          If you are looking for a new eye doctor, or if you've been referred
-          for consultation by your current doctor, please call us today. We look
-          forward to seeing you!
-        </p>
-      </div>
-      <div class="w3-cell-row">
-        <div class="w3-container w3-cell">
+      <div class="w3-card-4" style="width: 100%">
+        <div class="w3-container w3-center" style="width: 100%">
           <img
             src="media/phyderod.jpg"
             class="w3-image w3-hide-small"
             style="width: 100%; max-width: 700px"
           />
         </div>
-        <div class="w3-container w3-cell">
+        <div class="w3-container w3-center" style="width: 100%">
           <br />
           <div>
             <h3>Paul Hyder OD</h3>
@@ -197,15 +199,15 @@
           </p>
         </div>
       </div>
-      <div class="w3-cell-row">
-        <div class="w3-container w3-cell">
+      <div class="w3-card-4" style="width: 100%">
+        <div class="w3-container w3-center" style="width: 100%">
           <img
             src="media/kcranmermd.png"
             class="w3-image w3-hide-small"
             style="width: 100%; max-width: 600px"
           />
         </div>
-        <div class="w3-container w3-cell">
+        <div class="w3-container w3-center">
           <div>
             <h3>Kevin Cranmer MD</h3>
           </div>
@@ -242,29 +244,134 @@
             <th>Surgery</th>
           </tr>
           <tr>
-            <td>Glasses</td>
-            <td>Diabetic retinopathy</td>
-            <td>Cataract</td>
+            <td>
+              <button
+                onclick="document.getElementById('glasses').style.display='block'"
+                class="w3-button"
+              >
+                Glasses
+              </button>
+            </td>
+            <td>
+              <button
+                onclick="document.getElementById('diabetic retinopathy').style.display='block'"
+                class="w3-button"
+              >
+                Diabetic Retinopathy
+              </button>
+            </td>
+            <td>
+              <button
+                onclick="document.getElementById('cataract').style.display='block'"
+                class="w3-button"
+              >
+                Cataract
+              </button>
+            </td>
           </tr>
           <tr>
-            <td>Contact lens fitting</td>
-            <td>Macular degeneration</td>
-            <td>Glaucoma</td>
+            <td>
+              <button
+                onclick="document.getElementById('contact lens fitting').style.display='block'"
+                class="w3-button"
+              >
+                Contact Lens Fitting
+              </button>
+            </td>
+            <td>
+              <button
+                onclick="document.getElementById('macular degeneration').style.display='block'"
+                class="w3-button"
+              >
+                Macular Degeneration
+              </button>
+            </td>
+            <td>
+              <button
+                onclick="document.getElementById('glaucoma').style.display='block'"
+                class="w3-button"
+              >
+                Glaucoma
+              </button>
+            </td>
           </tr>
           <tr>
-            <td>Exams for eye health</td>
-            <td>Glaucoma</td>
-            <td>Eye growths</td>
+            <td>
+              <button
+                onclick="document.getElementById('exam').style.display='block'"
+                class="w3-button"
+              >
+                Exams for eye health
+              </button>
+            </td>
+            <td>
+              <button
+                onclick="document.getElementById('glaucoma').style.display='block'"
+                class="w3-button"
+              >
+                Glaucoma
+              </button>
+            </td>
+            <td>
+              <button
+                onclick="document.getElementById('eye growths').style.display='block'"
+                class="w3-button"
+              >
+                Eye Growths
+              </button>
+            </td>
           </tr>
           <tr>
-            <td>Children's eye screening</td>
-            <td>Dry eye</td>
-            <td>Droopy eyelids</td>
+            <td>
+              <button
+                onclick="document.getElementById('children').style.display='block'"
+                class="w3-button"
+              >
+                Children's eye screening
+              </button>
+            </td>
+            <td>
+              <button
+                onclick="document.getElementById('dry eye').style.display='block'"
+                class="w3-button"
+              >
+                Dry eye
+              </button>
+            </td>
+            <td>
+              <button
+                onclick="document.getElementById('droopy eyelids').style.display='block'"
+                class="w3-button"
+              >
+                Droopy eyelids
+              </button>
+            </td>
           </tr>
           <tr>
-            <td>Eye trauma and injuries</td>
-            <td>Drug toxicity</td>
-            <td>Stye drainage</td>
+            <td>
+              <button
+                onclick="document.getElementById('eye trauma').style.display='block'"
+                class="w3-button"
+              >
+                Eye trauma and injuries
+              </button>
+            </td>
+            <td>
+              <button
+                onclick="document.getElementById('drug toxicity').style.display='block'"
+                class="w3-button"
+              >
+                Drug toxicity
+              </button>
+            </td>
+            <td>
+              <button
+                onclick="document.getElementById('stye').style.display='block'"
+                class="w3-button"
+              >
+                Stye drainage
+              </button>
+            </td>
           </tr>
         </table>
       </div>
@@ -349,6 +456,330 @@
         </div>
       </div>
     </div>
+    <!-- Modals for SERVICES -->
+    <div id="glasses" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-teal">
+          <span
+            onclick="document.getElementById('glasses').style.display='none'"
+            class="w3-button w3-display-topright"
+            >&times;</span
+          >
+          <h2>Glasses</h2>
+        </header>
+        <div class="w3-container">
+          <p>Info goes here</p>
+        </div>
+      </div>
+    </div>
+    <div id="diabetic retinopathy" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-teal">
+          <span
+            onclick="document.getElementById('diabetic retinopathy').style.display='none'"
+            class="w3-button w3-display-topright"
+            >&times;</span
+          >
+          <h2>Diabetic Retinopathy</h2>
+        </header>
+        <div class="w3-container">
+          <p>Info goes here</p>
+        </div>
+      </div>
+    </div>
+    <div id="cataract" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-teal">
+          <span
+            onclick="document.getElementById('cataract').style.display='none'"
+            class="w3-button w3-display-topright"
+            >&times;</span
+          >
+          <h2>Cataract</h2>
+        </header>
+        <div class="w3-container">
+          <p>Info goes here</p>
+        </div>
+      </div>
+    </div>
+    <div id="contact lens fitting" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-teal">
+          <span
+            onclick="document.getElementById('contact lens fitting').style.display='none'"
+            class="w3-button w3-display-topright"
+            >&times;</span
+          >
+          <h2>Contact Lens Fitting</h2>
+        </header>
+        <div class="w3-container">
+          <p>Info goes here</p>
+        </div>
+      </div>
+    </div>
+    <div id="macular degeneration" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-teal">
+          <span
+            onclick="document.getElementById('macular degeneration').style.display='none'"
+            class="w3-button w3-display-topright"
+            >&times;</span
+          >
+          <h2>Macular Degeneration</h2>
+        </header>
+        <div class="w3-container">
+          <p>Info goes here</p>
+        </div>
+      </div>
+    </div>
+    <div id="glaucoma" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-teal">
+          <span
+            onclick="document.getElementById('glaucoma').style.display='none'"
+            class="w3-button w3-display-topright"
+            >&times;</span
+          >
+          <h2>Glaucoma</h2>
+        </header>
+        <div class="w3-container">
+          <p>Info goes here</p>
+        </div>
+      </div>
+    </div>
+    <div id="exam" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-teal">
+          <span
+            onclick="document.getElementById('exam').style.display='none'"
+            class="w3-button w3-display-topright"
+            >&times;</span
+          >
+          <h2>Exams for Eye Health</h2>
+        </header>
+        <div class="w3-container">
+          <p>Info goes here</p>
+        </div>
+      </div>
+    </div>
+    <div id="eye growths" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-teal">
+          <span
+            onclick="document.getElementById('eye growths').style.display='none'"
+            class="w3-button w3-display-topright"
+            >&times;</span
+          >
+          <h2>Eye Growths</h2>
+        </header>
+        <div class="w3-container">
+          <p>Info goes here</p>
+        </div>
+      </div>
+    </div>
+    <div id="children" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-teal">
+          <span
+            onclick="document.getElementById('children').style.display='none'"
+            class="w3-button w3-display-topright"
+            >&times;</span
+          >
+          <h2>Children's Eye Screening</h2>
+        </header>
+        <div class="w3-container">
+          <p>Info goes here</p>
+        </div>
+      </div>
+    </div>
+    <div id="dry eye" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-teal">
+          <span
+            onclick="document.getElementById('dry eye').style.display='none'"
+            class="w3-button w3-display-topright"
+            >&times;</span
+          >
+          <h2>Dry Eye</h2>
+        </header>
+        <div class="w3-container">
+          <p>Info goes here</p>
+        </div>
+      </div>
+    </div>
+    <div id="droopy eyelids" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-teal">
+          <span
+            onclick="document.getElementById('droopy eyelids').style.display='none'"
+            class="w3-button w3-display-topright"
+            >&times;</span
+          >
+          <h2>Droopy Eyelids</h2>
+        </header>
+        <div class="w3-container">
+          <p>Info goes here</p>
+        </div>
+      </div>
+    </div>
+    <div id="eye trauma" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-teal">
+          <span
+            onclick="document.getElementById('eye trauma').style.display='none'"
+            class="w3-button w3-display-topright"
+            >&times;</span
+          >
+          <h2>Eye Trauma and Injuries</h2>
+        </header>
+        <div class="w3-container">
+          <p>Info goes here</p>
+        </div>
+      </div>
+    </div>
+    <div id="drug toxicity" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-teal">
+          <span
+            onclick="document.getElementById('drug toxicity').style.display='none'"
+            class="w3-button w3-display-topright"
+            >&times;</span
+          >
+          <h2>Drug Toxicity</h2>
+        </header>
+        <div class="w3-container">
+          <p>Info goes here</p>
+        </div>
+      </div>
+    </div>
+    <div id="stye" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-teal">
+          <span
+            onclick="document.getElementById('stye').style.display='none'"
+            class="w3-button w3-display-topright"
+            >&times;</span
+          >
+          <h2>Stye Drainage</h2>
+        </header>
+        <div class="w3-container">
+          <p>Info goes here</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var modal = document.getElementById("glasses");
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <script>
+      var modal = document.getElementById("diabetic retinopathy");
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <script>
+      var modal = document.getElementById("cataract");
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <script>
+      var modal = document.getElementById("contact lens fitting");
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <script>
+      var modal = document.getElementById("macular degeneration");
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <script>
+      var modal = document.getElementById("glaucoma");
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <script>
+      var modal = document.getElementById("exam");
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <script>
+      var modal = document.getElementById("eye growths");
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <script>
+      var modal = document.getElementById("children");
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <script>
+      var modal = document.getElementById("dry eye");
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <script>
+      var modal = document.getElementById("droopy eyelids");
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <script>
+      var modal = document.getElementById("eye trauma");
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <script>
+      var modal = document.getElementById("drug toxicity");
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <script>
+      var modal = document.getElementById("stye");
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
     <script>
       function openCat(CatName) {
         var i;
