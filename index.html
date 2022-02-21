@@ -24,7 +24,7 @@
   </head>
 
   <body>
-    <div class="w3-bar w3-black w3-top">
+    <div class="w3-bar w3-black">
       <button class="w3-bar-item w3-button" onclick="openCat('HOME')">
         HOME
       </button>
@@ -37,11 +37,29 @@
       <button class="w3-bar-item w3-button" onclick="openCat('CONTACT')">
         CONTACT
       </button>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">PATIENTS</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="patients/geninfo/genInfo.html" class="w3-bar-item w3-button">General Info</a>
+          <a href="patients/catPts/catPatients.html" class="w3-bar-item w3-button">Cataract Patients</a>
+          <a href="patients/lvc/lvcPatients.html" class="w3-bar-item w3-button">Laser Vision Correction Patients</a>
+          <a href="patients/glaucoma/glauPatients.html" class="w3-bar-item w3-button">Glaucoma Patients</a>
+        </div>
+      </div>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">CLINICIANS</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="https://www.see-view.info/referrals.php" class="w3-bar-item w3-button">Referrals</a>
+          <a href="clinicians/catComgt.html" class="w3-bar-item w3-button">Cataract Co-Management</a>
+        </div>
+      </div>
+      <a href="/payments.html" class="w3-bar-item w3-button">PAYMENTS</a>
+      <a href="/staffonly.html" class="w3-bar-item w3-button">STAFF</a>
     </div>
 
-    <div id="HOME" class="Cat w3-container">
+    <div id="HOME" class="Cat w3-container w3-black">
       <div class="w3-display-container">
-        <img src="media/refractor.jpg" style="min-height: 400px; width: 100%" />
+        <img src="media/refractor.jpg" style="min-height: 700px; width: 100%" />
         <div class="w3-display-middle w3-container w3-black w3-large-white">
           <h1>SEE-CARE</h1>
         </div>
@@ -260,11 +278,6 @@
         </div>
       </div>
     </div>
-    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-      <br><br>
-      <a href="staffonly.html">Staff login</a>
-
     <script>
       function openCat(CatName) {
         var i;
