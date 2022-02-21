@@ -1,7 +1,7 @@
 
 # **Testing**
 
-[w3spaces playground](https://testing1472.w3spaces.com/)
+[w3spaces playground](https://testing1472.w3spaces.com/) (Not updated)
 
 [Original Site](https://SEE-CARE.com/)
 
@@ -44,4 +44,4 @@
 18. cascading menu on navbar? might make it too complicated for user
 19. What is use of "Send Message" on contact tab? Experiment with alternatives
 20. video modals from vimeo are blocked for now due to "privacy settings"
-21. change target=_blank to target=_self for linked pages, keep for pdf
+21. change target=_blank to target=_self for linked pages, keep for pdf(Done)
