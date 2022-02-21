@@ -1,7 +1,7 @@
 
 # **Testing**
 
-[w3spaces playground](https://testing1472.w3spaces.com/) (Not update)
+[w3spaces playground](https://testing1472.w3spaces.com/) (Not updated)
 
 [Original Site](https://SEE-CARE.com/)
 
