@@ -1,74 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Payments</title>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/w3.css">
-</head>
+  <title>Payments</title>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link rel="stylesheet" href="/css/w3.css" />
+    <script
+      src="https://kit.fontawesome.com/dcf5d0b3c5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
   <body>
     <div class="w3-bar w3-black">
-        <a href="/index.html" class="w3-bar-item w3-button">HOME</a>
-        <div class="w3-dropdown-hover">
-          <button class="w3-button">PATIENTS</button>
-          <div class="w3-dropdown-content w3-bar-block w3-card-4">
-            <a href="/patients/geninfo/genInfo.html" class="w3-bar-item w3-button">General Info</a>
-            <a href="/patients/catPts/catPatients.html" class="w3-bar-item w3-button">Cataract Patients</a>
-            <a href="/patients/lvc/lvcPatients.html" class="w3-bar-item w3-button">Laser Vision Correction Patients</a>
-            <a href="/patients/glaucoma/glauVideos.html" class="w3-bar-item w3-button">Glaucoma Patients</a>
+      <a href="/index.html" class="w3-bar-item w3-button"
+        ><i class="fa-solid fa-eye"></i> HOME</a
+      >
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">
+          <i class="fa-solid fa-user-doctor"></i> PATIENTS
+        </button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="/patients/geninfo/genInfo.html" class="w3-bar-item w3-button"
+            >General Info</a
+          >
+          <a
+            href="/patients/catPts/catPatients.html"
+            class="w3-bar-item w3-button"
+            >Cataract Patients</a
+          >
+          <a href="/patients/lvc/lvcPatients.html" class="w3-bar-item w3-button"
+            >Laser Vision Correction Patients</a
+          >
+          <a
+            href="/patients/glaucoma/glauVideos.html"
+            class="w3-bar-item w3-button"
+            >Glaucoma Patients</a
+          >
         </div>
+      </div>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">
+          <i class="fa-solid fa-heart-pulse"></i> CLINICIANS
+        </button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a
+            href="https://www.see-view.info/referrals.php"
+            class="w3-bar-item w3-button"
+            >Referrals</a
+          >
+          <a href="/clinicians/catComgtInstr.html" class="w3-bar-item w3-button"
+            >Cataract Co-Management</a
+          >
         </div>
-            <div class="w3-dropdown-hover">
-              <button class="w3-button">CLINICIANS</button>
-              <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                <a href="https://www.see-view.info/referrals.php" class="w3-bar-item w3-button">Referrals</a>
-                <a href="/clinicians/catComgtInstr.html" class="w3-bar-item w3-button">Cataract Co-Management</a>
-              </div>
-            </div>
-            <a href="/payments.html" class="w3-bar-item w3-button">PAYMENTS</a>
-            <a href="/staffonly.html" class="w3-bar-item w3-button">STAFF</a>
-        </div>
-          <br>
-<div class="w3-row">
-<div class="w3-half w3-container">
-    <h2>Credit card payments:</h1>
-    <ul>
-        <li>You may make payments to Southeast Connecticut Eye Care LLC by entering the amount and clicking the button below.</li>
-        <li>If you need to know your account balance, please call our main number at 860-373-4148.</li>
-        <li>You can pay your co-pay with this feature. Your co-pay amount is on your insurance card.</li>
-        <li>Our practice is classified as a "specialist" for purposes of your co-pay.</li>
-    </ul>
-    <br>
-
-    <form class="w3-container" action="https://see-care.com/payments.php" method="post">
-    <label>Patient first name:</label>
-    <input class="w3-input" type="text" name="inpPtFirst" maxlength=15 size=15 placeholder="Enter first name here" required>
-    <label>Patient last name:</label>
-    <input class="w3-input" type="text" name="inpPtLast" maxlength=15 size=15 placeholder="Enter last name here" required>
-    <label>Patient date of birth:</label>
-    <input class="w3-input" type="text" name="inpPtDOB" maxlength=10 size=10 placeholder="Enter patient DOB here" required>
-    <label>Payment amount (enter numbers only, no "$" sign)</label>
-    <input class="w3-input" type="text" name="inpAmtEntered" maxlength=9 size=10 placeholder="Amount in $" required>
-    <br>
-    <button class="w3-btn w3-green" type="submit">Confirm</button>
-    </form>
+      </div>
+      <a href="/payments.html" class="w3-bar-item w3-button"
+        ><i class="fa-solid fa-credit-card"></i> PAYMENTS</a
+      >
+      <a href="/staffonly.html" class="w3-bar-item w3-button"
+        ><i class="fa-solid fa-lock"></i> STAFF</a
+      >
     </div>
-<div class="w3-half w3-container">
-    <h2>Pay by check:</h1>
-    <ul>
-        <li>Please make checks payable to Southeast Connecticut Eye Care LLC.</li>
-        <li>You can give us your check at the time of visit or mail it to Southeast Connecticut Eye Care LLC,
-        12 Case Street, Suite 215, Norwich, CT 06360.</li>
-        <li>We charge a $20 fee for returned checks.  Please ensure you have sufficient funds.</li>
-        <li>Our practice is classified as a "specialist" for purposes of your co-pay.</li>
-    </ul>
-    <br>
-    <h2>Pay by cash:</h1>
-    <ul>
-        <li>Please make sure you receive a receipt for your payment.</li>
-        <li>Without a receipt we can not properly credit your account.</li>
-    </ul>
-    </div>
-</div>
+    <br />
+    <div class="w3-row">
+      <div class="w3-half w3-container">
+        <h2>Credit card payments:</h2>
+        <ul>
+          <li>
+            You may make payments to Southeast Connecticut Eye Care LLC by
+            entering the amount and clicking the button below.
+          </li>
+          <li>
+            If you need to know your account balance, please call our main
+            number at 860-373-4148.
+          </li>
+          <li>
+            You can pay your co-pay with this feature. Your co-pay amount is on
+            your insurance card.
+          </li>
+          <li>
+            Our practice is classified as a "specialist" for purposes of your
+            co-pay.
+          </li>
+        </ul>
+        <br />
 
-</body>
+        <form
+          class="w3-container"
+          action="https://see-care.com/payments.php"
+          method="post"
+        >
+          <label>Patient first name:</label>
+          <input
+            class="w3-input"
+            type="text"
+            name="inpPtFirst"
+            maxlength="15"
+            size="15"
+            placeholder="Enter first name here"
+            required
+          />
+          <label>Patient last name:</label>
+          <input
+            class="w3-input"
+            type="text"
+            name="inpPtLast"
+            maxlength="15"
+            size="15"
+            placeholder="Enter last name here"
+            required
+          />
+          <label>Patient date of birth:</label>
+          <input
+            class="w3-input"
+            type="text"
+            name="inpPtDOB"
+            maxlength="10"
+            size="10"
+            placeholder="Enter patient DOB here"
+            required
+          />
+          <label>Payment amount (enter numbers only, no "$" sign)</label>
+          <input
+            class="w3-input"
+            type="text"
+            name="inpAmtEntered"
+            maxlength="9"
+            size="10"
+            placeholder="Amount in $"
+            required
+          />
+          <br />
+          <button class="w3-btn w3-green" type="submit">Confirm</button>
+        </form>
+      </div>
+      <div class="w3-half w3-container">
+        <h2>Pay by check:</h2>
+        <ul>
+          <li>
+            Please make checks payable to Southeast Connecticut Eye Care LLC.
+          </li>
+          <li>
+            You can give us your check at the time of visit or mail it to
+            Southeast Connecticut Eye Care LLC, 12 Case Street, Suite 215,
+            Norwich, CT 06360.
+          </li>
+          <li>
+            We charge a $20 fee for returned checks. Please ensure you have
+            sufficient funds.
+          </li>
+          <li>
+            Our practice is classified as a "specialist" for purposes of your
+            co-pay.
+          </li>
+        </ul>
+        <br />
+        <h2>Pay by cash:</h2>
+        <ul>
+          <li>Please make sure you receive a receipt for your payment.</li>
+          <li>Without a receipt we can not properly credit your account.</li>
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>

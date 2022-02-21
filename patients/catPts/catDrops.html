@@ -1,95 +1,155 @@
 <!DOCTYPE html>
-<html lang="en"> 
-<head>
-        <title>Drop instructions</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="../../css/w3.css">
-        <script src="../../../ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <style>
-            @media only print {
-                .printButton {display:none}
-            }
-            #headerquestion {font-size:20px;}
-        </style>
-    </head>
-    <body>
-      <div class="w3-bar w3-black">
-        <a href="/index.html" class="w3-bar-item w3-button">HOME</a>
-        <div class="w3-dropdown-hover">
-          <button class="w3-button">PATIENTS</button>
-          <div class="w3-dropdown-content w3-bar-block w3-card-4">
-            <a href="/patients/geninfo/genInfo.html" class="w3-bar-item w3-button">General Info</a>
-            <a href="/patients/catPts/catPatients.html" class="w3-bar-item w3-button">Cataract Patients</a>
-            <a href="/patients/lvc/lvcPatients.html" class="w3-bar-item w3-button">Laser Vision Correction Patients</a>
-            <a href="/patients/glaucoma/glauVideos.html" class="w3-bar-item w3-button">Glaucoma Patients</a>
-          </div>
-        </div>
-        <div class="w3-dropdown-hover">
-          <button class="w3-button">CLINICIANS</button>
-          <div class="w3-dropdown-content w3-bar-block w3-card-4">
-            <a href="https://www.see-view.info/referrals.php" class="w3-bar-item w3-button">Referrals</a>
-            <a href="/clinicians/catComgtInstr.html" class="w3-bar-item w3-button">Cataract Co-Management</a>
-          </div>
-        </div>
-        <a href="/payments.html" class="w3-bar-item w3-button">PAYMENTS</a>
-        <a href="/staffonly.html" class="w3-bar-item w3-button">STAFF</a>
-      </div>
-      <br>
+<html lang="en">
+  <head>
+    <title>Drop instructions</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link rel="stylesheet" href="/css/w3.css" />
+    <script
+      src="https://kit.fontawesome.com/dcf5d0b3c5.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @media only print {
+        .printButton {
+          display: none;
+        }
+      }
 
-        <button type="button" class="w3-btn w3-block w3-center w3-orange printButton" onclick="window.print()">
-            Click here to print this page.
+      #headerquestion {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="w3-bar w3-black">
+      <a href="/index.html" class="w3-bar-item w3-button"
+        ><i class="fa-solid fa-eye"></i> HOME</a
+      >
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">
+          <i class="fa-solid fa-user-doctor"></i> PATIENTS
         </button>
-        <div class="w3-container">
-        <h1 class="w3-center">Instructions for Cataract Surgery Medications</h1>
-
-        <p>It’s important that you use your cataract surgery drops as instructed. 
-        They help prevent infection and help you to heal.  If you have any questions about how to use 
-        them, please call our office at 860-373-4148.</p>
-        
-        <p>This is the usual course of drops.  If your surgeon gave you different instructions, follow those.</p>
-        
-          <table class="w3-table-all">
-            <thead>
-            <tr class="w3-red">
-                <th>Time</th>
-                <th>Medications</th>
-            </tr>
-            </thead>
-            <tr>
-              <td>Starting 3 days before surgery</td>
-              <td>Prolensa (anti-inflammatory): 1 drop in the surgical eye 1x/day
-              </td>
-            </tr>
-            <tr>
-              <td>Starting after surgery</td>
-              <td>Prolensa: 1 drop in the surgical eye 1x/day<br>
-                Prednisolone (anti-inflammatory): 1 drop in the surgical eye 4x/day
-              </td>
-            </tr>
-            <tr>
-              <td>Starting five days after surgery</td>
-              <td><b>Prolensa: 1 drop in the surgical eye 1x/day<br>
-                Prednisolone: 1 drop in the surgical eye 2x/day
-              </td>
-            </tr>
-            <tr>
-              <td>30 days after surgery</td>
-              <td>Stop your drops</td>
-            </tr>
-         </table>
-        
-        <p>Your vision in the first days after surgery may be blurry and you may have some ache or scratchiness.  
-        This is normal.  These symptoms should get gradually better, but never worse.  If you have worsening vision 
-        or increasing discomfort in the days to weeks after surgery, call your surgeon at 860-373-4148.</p>
-        
-        <p>If you are unable to afford your drops, or they are very expensive, there may be alternatives.  Please call our office.</p>
-        
-        <p>If you are allergic to these medications, or ones that sound similar to them, do not take them.  Please call our office.</p>
-        <table>
-            
-        </table>
-
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="/patients/geninfo/genInfo.html" class="w3-bar-item w3-button"
+            >General Info</a
+          >
+          <a
+            href="/patients/catPts/catPatients.html"
+            class="w3-bar-item w3-button"
+            >Cataract Patients</a
+          >
+          <a href="/patients/lvc/lvcPatients.html" class="w3-bar-item w3-button"
+            >Laser Vision Correction Patients</a
+          >
+          <a
+            href="/patients/glaucoma/glauVideos.html"
+            class="w3-bar-item w3-button"
+            >Glaucoma Patients</a
+          >
         </div>
-    </body>
+      </div>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">
+          <i class="fa-solid fa-heart-pulse"></i> CLINICIANS
+        </button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a
+            href="https://www.see-view.info/referrals.php"
+            class="w3-bar-item w3-button"
+            >Referrals</a
+          >
+          <a href="/clinicians/catComgtInstr.html" class="w3-bar-item w3-button"
+            >Cataract Co-Management</a
+          >
+        </div>
+      </div>
+      <a href="/payments.html" class="w3-bar-item w3-button"
+        ><i class="fa-solid fa-credit-card"></i> PAYMENTS</a
+      >
+      <a href="/staffonly.html" class="w3-bar-item w3-button"
+        ><i class="fa-solid fa-lock"></i> STAFF</a
+      >
+    </div>
+    <br />
+
+    <button
+      type="button"
+      class="w3-btn w3-block w3-center w3-orange printButton"
+      onclick="window.print()"
+    >
+      Click here to print this page.
+    </button>
+    <div class="w3-container">
+      <h1 class="w3-center">Instructions for Cataract Surgery Medications</h1>
+
+      <p>
+        It’s important that you use your cataract surgery drops as instructed.
+        They help prevent infection and help you to heal. If you have any
+        questions about how to use them, please call our office at 860-373-4148.
+      </p>
+
+      <p>
+        This is the usual course of drops. If your surgeon gave you different
+        instructions, follow those.
+      </p>
+
+      <table class="w3-table-all">
+        <thead>
+          <tr class="w3-red">
+            <th>Time</th>
+            <th>Medications</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>Starting 3 days before surgery</td>
+          <td>
+            Prolensa (anti-inflammatory): 1 drop in the surgical eye 1x/day
+          </td>
+        </tr>
+        <tr>
+          <td>Starting after surgery</td>
+          <td>
+            Prolensa: 1 drop in the surgical eye 1x/day<br />
+            Prednisolone (anti-inflammatory): 1 drop in the surgical eye 4x/day
+          </td>
+        </tr>
+        <tr>
+          <td>Starting five days after surgery</td>
+          <td>
+            Prolensa: 1 drop in the surgical eye 1x/day<br />
+            Prednisolone: 1 drop in the surgical eye 2x/day
+          </td>
+        </tr>
+        <tr>
+          <td>30 days after surgery</td>
+          <td>Stop your drops</td>
+        </tr>
+      </table>
+
+      <p>
+        Your vision in the first days after surgery may be blurry and you may
+        have some ache or scratchiness. This is normal. These symptoms should
+        get gradually better, but never worse. If you have worsening vision or
+        increasing discomfort in the days to weeks after surgery, call your
+        surgeon at 860-373-4148.
+      </p>
+
+      <p>
+        If you are unable to afford your drops, or they are very expensive,
+        there may be alternatives. Please call our office.
+      </p>
+
+      <p>
+        If you are allergic to these medications, or ones that sound similar to
+        them, do not take them. Please call our office.
+      </p>
+      <table></table>
+    </div>
+  </body>
 </html>

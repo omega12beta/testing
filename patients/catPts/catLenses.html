@@ -1,157 +1,221 @@
 <!DOCTYPE html>
 <!--Copyright Southeast Connecticut Eye Care, LLC, all rights reserved.-->
 <html lang="en">
-
-<head>
+  <head>
     <title>Lens choices</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../../css/w3.css">
-    <script src="../../../ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link rel="stylesheet" href="/css/w3.css" />
+    <script
+      src="https://kit.fontawesome.com/dcf5d0b3c5.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
-        @media only print {
-            .printButton {
-                display: none
-            }
+      @media only print {
+        .printButton {
+          display: none;
         }
+      }
 
-        #headerquestion {
-            font-size: 20px;
-        }
+      #headerquestion {
+        font-size: 20px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="w3-bar w3-black">
-        <a href="/index.html" class="w3-bar-item w3-button">HOME</a>
-        <div class="w3-dropdown-hover">
-          <button class="w3-button">PATIENTS</button>
-          <div class="w3-dropdown-content w3-bar-block w3-card-4">
-            <a href="/patients/geninfo/genInfo.html" class="w3-bar-item w3-button">General Info</a>
-            <a href="/patients/catPts/catPatients.html" class="w3-bar-item w3-button">Cataract Patients</a>
-            <a href="/patients/lvc/lvcPatients.html" class="w3-bar-item w3-button">Laser Vision Correction Patients</a>
-            <a href="/patients/glaucoma/glauVideos.html" class="w3-bar-item w3-button">Glaucoma Patients</a>
-          </div>
+      <a href="/index.html" class="w3-bar-item w3-button"
+        ><i class="fa-solid fa-eye"></i> HOME</a
+      >
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">
+          <i class="fa-solid fa-user-doctor"></i> PATIENTS
+        </button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="/patients/geninfo/genInfo.html" class="w3-bar-item w3-button"
+            >General Info</a
+          >
+          <a
+            href="/patients/catPts/catPatients.html"
+            class="w3-bar-item w3-button"
+            >Cataract Patients</a
+          >
+          <a href="/patients/lvc/lvcPatients.html" class="w3-bar-item w3-button"
+            >Laser Vision Correction Patients</a
+          >
+          <a
+            href="/patients/glaucoma/glauVideos.html"
+            class="w3-bar-item w3-button"
+            >Glaucoma Patients</a
+          >
         </div>
-        <div class="w3-dropdown-hover">
-          <button class="w3-button">CLINICIANS</button>
-          <div class="w3-dropdown-content w3-bar-block w3-card-4">
-            <a href="https://www.see-view.info/referrals.php" class="w3-bar-item w3-button">Referrals</a>
-            <a href="/clinicians/catComgtInstr.html" class="w3-bar-item w3-button">Cataract Co-Management</a>
-          </div>
-        </div>
-        <a href="/payments.html" class="w3-bar-item w3-button">PAYMENTS</a>
-        <a href="/staffonly.html" class="w3-bar-item w3-button">STAFF</a>
       </div>
-      <br>
-      <button type="button" class="w3-btn w3-block w3-center w3-orange printButton" onclick="window.print()">Click here
-        to print this page.</button>
-    <div class="w3-container">
-        <h1 class="w3-center">Lens Choices and Costs</h1>
-        <h2>Overview</h2>
-        <p>
-        <p>Choosing the appropriate lens implant for your surgery is important. You will look through that lens for the
-            rest of your life. The best lens for you depends on many factors, including the health of your eyes, how
-            important it is to
-            you to decrease your dependence on glasses, cost, and what activities are important to you. Be sure you
-            understand the
-            various choices available, and discuss with your surgeon what lens would be best for you.</p>
-        <p>The lenses listed below
-            are the ones we typically use. There are others available, such as accommodating lenses. We use the ones
-            below because we have
-            found them to be the most reliable and effective ones. If you have a lens in which your are interested that
-            is not listed
-            below, please discuss it with your surgeon.</p>
-        </p>
-        <table class="w3-table-all">
-            <thead>
-                <tr class="w3-teal">
-                    <th>Lens Type</th>
-                    <th>Description</th>
-                    <th>Additional Costs</th>
-                </tr>
-            </thead>
-            <tr>
-                <td class="w3-center"><b>aspheric or spherical monofocal</b></td>
-                <td><i>These are the lenses that most patients receive. These lenses do not correct astigmatism.
-                        In patients without significant astigmatism they can provide excellent vision without glasses at
-                        one
-                        focal point. Glasses will often be needed for good vision at other focal points. Patients with
-                        significant
-                        astigmatism may need glasses for all distances.</i></td>
-                <td>normally covered by insurance without additional costs</td>
-            </tr>
-            <tr>
-                <td class="w3-center"><b>toric monofocal</b></td>
-                <td><i>Toric lenses are single focus-point lenses that correct astigmatism. In patients with
-                        astigmatism,
-                        the surface of the eye is more curved in one direction than another. This blurs vision at all
-                        distances, unless
-                        it is corrected with a toric lens. Toric lenses can reduce astigmatism, so that clear vision is
-                        possible at
-                        one focal point. Toric lenses can reduce the need for glasses in patients with astigmatism.</i>
-                </td>
-                <td>$1,400 per eye beyond normal surgical charges</td>
-            </tr>
-            <tr>
-                <td class="w3-center"><b>monovision</b></td>
-                <td><i>Monovision is not a particular lens type, but a technique used for reducing dependence on
-                        glasses.
-                        With monovision, the patient receives a monofocal lens (spherical, aspheric, or toric) in one
-                        eye that is
-                        focused at distance. The other eye is focused at near with another monofocal lens. This can
-                        reduce or eliminate
-                        the need for glasses in some patients. The patients who do the best with this method have worn
-                        contact lenses that do this previously.
-                        Many patients feel uncomfortable with the idea of this, and should not have monovision.
-                        If you are considering monovision, you should consider simulating it in the clinic before your
-                        surgery.</i></td>
-                <td>no additional charge for aspheric or spherical monofocal lenses, $1,400 per eye for toric monofocal
-                    lenses</td>
-            </tr>
-            <tr>
-                <td class="w3-center"><b>multifocal lens</b></td>
-                <td><i>Multifocal lenses provide an extended range of focus. They work best when both eyes have them
-                        implanted.
-                        In most patients with multifocal lenses, the need for glasses is either reduced or eliminated.
-                        Glasses are usually
-                        needed in some situations, such as seeing tiny print up close, or reading in dim light, but some
-                        patients are
-                        entirely independent of glasses. Downsides of these lenses include cost, and an increased risk
-                        of glare at night.</i></td>
-                <td>$2,300 per eye beyond normal surgical charges</td>
-            </tr>
-            <tr>
-                <td class="w3-center"><b>toric multifocal lens</b></td>
-                <td><i>Toric multifocal lenses incorporate astigmatism correction and multifocal optics. For patients
-                        with
-                        astigmatism, they can correct the blur from astigmatism, and also give an extended range of
-                        focus, like the
-                        standard multifocal lens. Potential side effects of these lenses are the same as for the
-                        standard multifocal lenses.</i></td>
-                <td>$2,300 per eye beyond normal surgical charges</td>
-            </tr>
-            <tr>
-                <td class="w3-center"><b>post-surgery laser vision correction</b></td>
-                <td><i>Rarely, patients who have cataract surgery feel that they did not achieve the optical result they
-                        wanted.
-                        It is often still possible to adjust the optics after the cataract surgery has been performed. A
-                        procedure called
-                        LASIK (or sometimes one called PRK) can modify the eye's optics after cataract surgery and
-                        reduce dependence on glasses.
-                        Patients who had cataract surgery and did not achieve the result they wanted receive a
-                        significant discount on these
-                        procedures.</i></td>
-                <td>$900 per eye</td>
-            </tr>
-        </table>
-        <p>Please understand that there is no guarantee of any particular outcome with any of these lenses. Although we
-            have
-            excellent techniques and technologies to help you achieve better vision, the results of surgery can vary,
-            even when surgery goes
-            perfectly. It is important to discuss with your surgeon your particular situation and goals before your
-            surgery.</p>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">
+          <i class="fa-solid fa-heart-pulse"></i> CLINICIANS
+        </button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a
+            href="https://www.see-view.info/referrals.php"
+            class="w3-bar-item w3-button"
+            >Referrals</a
+          >
+          <a href="/clinicians/catComgtInstr.html" class="w3-bar-item w3-button"
+            >Cataract Co-Management</a
+          >
+        </div>
+      </div>
+      <a href="/payments.html" class="w3-bar-item w3-button"
+        ><i class="fa-solid fa-credit-card"></i> PAYMENTS</a
+      >
+      <a href="/staffonly.html" class="w3-bar-item w3-button"
+        ><i class="fa-solid fa-lock"></i> STAFF</a
+      >
     </div>
-</body>
-
+    <br />
+    <button
+      type="button"
+      class="w3-btn w3-block w3-center w3-orange printButton"
+      onclick="window.print()"
+    >
+      Click here to print this page.
+    </button>
+    <div class="w3-container">
+      <h1 class="w3-center">Lens Choices and Costs</h1>
+      <h2>Overview</h2>
+      <p>
+        Choosing the appropriate lens implant for your surgery is important. You
+        will look through that lens for the rest of your life. The best lens for
+        you depends on many factors, including the health of your eyes, how
+        important it is to you to decrease your dependence on glasses, cost, and
+        what activities are important to you. Be sure you understand the various
+        choices available, and discuss with your surgeon what lens would be best
+        for you.
+      </p>
+      <p>
+        The lenses listed below are the ones we typically use. There are others
+        available, such as accommodating lenses. We use the ones below because
+        we have found them to be the most reliable and effective ones. If you
+        have a lens in which your are interested that is not listed below,
+        please discuss it with your surgeon.
+      </p>
+      <table class="w3-table-all">
+        <thead>
+          <tr class="w3-teal">
+            <th>Lens Type</th>
+            <th>Description</th>
+            <th>Additional Costs</th>
+          </tr>
+        </thead>
+        <tr>
+          <td class="w3-center"><b>aspheric or spherical monofocal</b></td>
+          <td>
+            <i
+              >These are the lenses that most patients receive. These lenses do
+              not correct astigmatism. In patients without significant
+              astigmatism they can provide excellent vision without glasses at
+              one focal point. Glasses will often be needed for good vision at
+              other focal points. Patients with significant astigmatism may need
+              glasses for all distances.</i
+            >
+          </td>
+          <td>normally covered by insurance without additional costs</td>
+        </tr>
+        <tr>
+          <td class="w3-center"><b>toric monofocal</b></td>
+          <td>
+            <i
+              >Toric lenses are single focus-point lenses that correct
+              astigmatism. In patients with astigmatism, the surface of the eye
+              is more curved in one direction than another. This blurs vision at
+              all distances, unless it is corrected with a toric lens. Toric
+              lenses can reduce astigmatism, so that clear vision is possible at
+              one focal point. Toric lenses can reduce the need for glasses in
+              patients with astigmatism.</i
+            >
+          </td>
+          <td>$1,400 per eye beyond normal surgical charges</td>
+        </tr>
+        <tr>
+          <td class="w3-center"><b>monovision</b></td>
+          <td>
+            <i
+              >Monovision is not a particular lens type, but a technique used
+              for reducing dependence on glasses. With monovision, the patient
+              receives a monofocal lens (spherical, aspheric, or toric) in one
+              eye that is focused at distance. The other eye is focused at near
+              with another monofocal lens. This can reduce or eliminate the need
+              for glasses in some patients. The patients who do the best with
+              this method have worn contact lenses that do this previously. Many
+              patients feel uncomfortable with the idea of this, and should not
+              have monovision. If you are considering monovision, you should
+              consider simulating it in the clinic before your surgery.</i
+            >
+          </td>
+          <td>
+            no additional charge for aspheric or spherical monofocal lenses,
+            $1,400 per eye for toric monofocal lenses
+          </td>
+        </tr>
+        <tr>
+          <td class="w3-center"><b>multifocal lens</b></td>
+          <td>
+            <i
+              >Multifocal lenses provide an extended range of focus. They work
+              best when both eyes have them implanted. In most patients with
+              multifocal lenses, the need for glasses is either reduced or
+              eliminated. Glasses are usually needed in some situations, such as
+              seeing tiny print up close, or reading in dim light, but some
+              patients are entirely independent of glasses. Downsides of these
+              lenses include cost, and an increased risk of glare at night.</i
+            >
+          </td>
+          <td>$2,300 per eye beyond normal surgical charges</td>
+        </tr>
+        <tr>
+          <td class="w3-center"><b>toric multifocal lens</b></td>
+          <td>
+            <i
+              >Toric multifocal lenses incorporate astigmatism correction and
+              multifocal optics. For patients with astigmatism, they can correct
+              the blur from astigmatism, and also give an extended range of
+              focus, like the standard multifocal lens. Potential side effects
+              of these lenses are the same as for the standard multifocal
+              lenses.</i
+            >
+          </td>
+          <td>$2,300 per eye beyond normal surgical charges</td>
+        </tr>
+        <tr>
+          <td class="w3-center"><b>post-surgery laser vision correction</b></td>
+          <td>
+            <i
+              >Rarely, patients who have cataract surgery feel that they did not
+              achieve the optical result they wanted. It is often still possible
+              to adjust the optics after the cataract surgery has been
+              performed. A procedure called LASIK (or sometimes one called PRK)
+              can modify the eye's optics after cataract surgery and reduce
+              dependence on glasses. Patients who had cataract surgery and did
+              not achieve the result they wanted receive a significant discount
+              on these procedures.</i
+            >
+          </td>
+          <td>$900 per eye</td>
+        </tr>
+      </table>
+      <p>
+        Please understand that there is no guarantee of any particular outcome
+        with any of these lenses. Although we have excellent techniques and
+        technologies to help you achieve better vision, the results of surgery
+        can vary, even when surgery goes perfectly. It is important to discuss
+        with your surgeon your particular situation and goals before your
+        surgery.
+      </p>
+    </div>
+  </body>
 </html>

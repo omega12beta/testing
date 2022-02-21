@@ -27,6 +27,7 @@
       }
     </style>
   </head>
+
   <body>
     <div id="fb-root"></div>
     <script
@@ -36,21 +37,24 @@
       src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0"
       nonce="Xfv1zdFY"
     ></script>
+
     <div class="w3-bar w3-black">
       <button class="w3-bar-item w3-button" onclick="openCat('HOME')">
-        HOME
+        <i class="fa-solid fa-eye"></i> HOME
       </button>
       <button class="w3-bar-item w3-button" onclick="openCat('ABOUT')">
-        ABOUT
+        <i class="fa-solid fa-users"></i> ABOUT
       </button>
       <button class="w3-bar-item w3-button" onclick="openCat('SERVICES')">
-        SERVICES
+        <i class="fa-solid fa-hospital"></i> SERVICES
       </button>
       <button class="w3-bar-item w3-button" onclick="openCat('CONTACT')">
-        CONTACT
+        <i class="fa-solid fa-address-card"></i> CONTACT
       </button>
       <div class="w3-dropdown-hover">
-        <button class="w3-button">PATIENTS</button>
+        <button class="w3-button">
+          <i class="fa-solid fa-heart-pulse"></i> PATIENTS
+        </button>
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
           <a href="patients/genInfo/genInfo.html" class="w3-bar-item w3-button"
             >General Info</a
@@ -71,7 +75,9 @@
         </div>
       </div>
       <div class="w3-dropdown-hover">
-        <button class="w3-button">CLINICIANS</button>
+        <button class="w3-button">
+          <i class="fa-solid fa-user-doctor"></i> CLINICIANS
+        </button>
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
           <a
             href="https://www.see-view.info/referrals.php"
@@ -83,13 +89,21 @@
           >
         </div>
       </div>
-      <a href="/payments.html" class="w3-bar-item w3-button">PAYMENTS</a>
-      <a href="/staffonly.html" class="w3-bar-item w3-button">STAFF</a>
+      <a href="/payments.html" class="w3-bar-item w3-button"
+        ><i class="fa-solid fa-credit-card"></i> PAYMENTS</a
+      >
+      <a href="/staffonly.html" class="w3-bar-item w3-button"
+        ><i class="fa-solid fa-lock"></i> STAFF</a
+      >
     </div>
 
     <div id="HOME" class="Cat w3-container w3-black">
       <div class="w3-display-container">
-        <img src="media/refractor.jpg" style="min-height: 700px; width: 100%" />
+        <img
+          src="media/refractor.jpg"
+          alt="refractor"
+          style="min-height: 700px; width: 100%"
+        />
         <div class="w3-display-topleft w3-container w3-large-white">
           <h1>SEE-CARE</h1>
         </div>
@@ -159,7 +173,9 @@
         </div>
         <div class="w3-container w3-cell">
           <br />
-          <div><h3>Paul Hyder OD</h3></div>
+          <div>
+            <h3>Paul Hyder OD</h3>
+          </div>
           <p>
             Dr. Paul Hyder practices comprehensive optometric care for adults
             and children. He has over thirty years of experience in treating
@@ -190,7 +206,9 @@
           />
         </div>
         <div class="w3-container w3-cell">
-          <div><h3>Kevin Cranmer MD</h3></div>
+          <div>
+            <h3>Kevin Cranmer MD</h3>
+          </div>
           <p>
             A board certified eye surgeon, Dr. Cranmer practices comprehensive
             ophthalmology. He sees children and adults, and takes care of
