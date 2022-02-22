@@ -39,6 +39,5 @@
 15. make "SEE-CARE" on HOME look better(improved not great yet)
 16. add staffonly.html user+pass images
 17. cascading menu on navbar? might make it too complicated for user(yeah it would be...)
-18. What is use of "Send Message" on contact tab? Experiment with alternatives
-19. video modals from vimeo are blocked for now due to "privacy settings"
-20. change target=\_blank to target=\_self for linked pages, keep for pdf(Done)
+18. video modals from vimeo are blocked for now due to "privacy settings"
+19. change target=\_blank to target=\_self for linked pages, keep for pdf(Done)
